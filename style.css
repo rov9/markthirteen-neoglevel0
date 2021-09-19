@@ -11,6 +11,7 @@
 h1{
   text-align: center;
   font-family: 'Baloo Thambi 2', cursive;
+  margin-bottom: 3rem;
   
 }
 body{
@@ -18,6 +19,7 @@ body{
    font-weight: 590;
   
 }
+
 
 input{
     border-radius: 20px;
@@ -27,16 +29,21 @@ input{
     width:30%;
     display: block;
     margin:auto;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 3rem;
   }
-  #show-btn
+#show-btn
   {
     display: block;
     margin:auto;
     margin-top: 2rem;
-    width: 3%;
+    width: 5%;
     padding: 0.2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    background: var(--primary-color);
+    color: #fff;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 2rem;
   }
 
 .span{
@@ -47,12 +54,12 @@ color: #818CF8;
   width:100%; 
   text-align: center;
   display: block;
+  margin-bottom: 3rem;
 }
 footer{
       display: block;
       margin:auto;
       text-align: center;
-      
   }
 
   #result-next,#result-previous
