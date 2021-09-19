@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200&display=swap');
+:root{
+    --primary-color:  
+      #6366F1;
+  }
+.container{
+  width:80%;
+  margin:auto;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Baloo Thambi 2', cursive;
+  
+}
+body{
+   font-family: 'Work Sans', sans-serif;
+   font-weight: 590;
+  
+}
+
+input{
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    width:30%;
+    display: block;
+    margin:auto;
+  }
+  #show-btn
+  {
+    display: block;
+    margin:auto;
+    margin-top: 2rem;
+    width: 3%;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+.span{
+color: #818CF8;
+}
+
+.input-head{
+  width:100%; 
+  text-align: center;
+  display: block;
+}
+footer{
+      display: block;
+      margin:auto;
+      text-align: center;
+      
+  }
+
+  #result-next,#result-previous
+  {
+    width: 100%;
+    display: block;
+    text-align:center; 
+  }
