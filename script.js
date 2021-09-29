@@ -209,14 +209,19 @@ function checkPalindromeForAllDateFormats(date){
     if(isPalindrome){
     resultRef.innerText='Yay! Your birthday is a palindrome!🥳'
     resultRef1.innerText=''
-    resultRef2.innerText=''
     }
     else{
       var [ctr1,nextDate] = getNextPalindromeDate(date);
       var [ctr2,previousDate]=getPreviousPalindromeDate(date);
       resultRef.innerText='Sorry! Your birthday is not a palindrome!😔'
-      resultRef1.innerText=`The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year},you missed it by ${ctr1} days! 😔`
-      resultRef2.innerText=`The previous palindrome date is ${previousDate.day}-${previousDate.month}-${previousDate.year},you missed it by ${ctr2} days! 😮`
+      if(ctr1<ctr2){
+      resultRef1.innerText=`The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year},you missed it by ${ctr1} days! 😔`
+      // resultRef2.innerText=`The previous palindrome date is ${previousDate.day}-${previousDate.month}-${previousDate.year},you missed it by ${ctr2} days! 😮`
+      }
+      else{
+      resultRef1.innerText=`The nearest palindrome date is ${previousDate.day}-${previousDate.month}-${previousDate.year},you missed it by ${ctr2} days! 😮`
+      // resultRef1.innerText=`The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year},you missed it by ${ctr1} days! 😔`
+      }
     }
     }
     
