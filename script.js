@@ -208,6 +208,8 @@ function checkPalindromeForAllDateFormats(date){
     var isPalindrome = checkPalindromeForAllDateFormats(date);
     if(isPalindrome){
     resultRef.innerText='Yay! Your birthday is a palindrome!🥳'
+    resultRef1.innerText=''
+    resultRef2.innerText=''
     }
     else{
       var [ctr1,nextDate] = getNextPalindromeDate(date);
