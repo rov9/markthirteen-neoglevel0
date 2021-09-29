@@ -191,6 +191,7 @@ function checkPalindromeForAllDateFormats(date){
     var dateInputRef=document.querySelector('#bday-input');
     var showBtnRef=document.querySelector('#show-btn');
     var resultRef=document.querySelector('#result-next');
+    var resultRef1=document.querySelector('#result-next1');
     var resultRef2=document.querySelector('#result-previous');
     function clickHandler(e)
     {
@@ -211,7 +212,8 @@ function checkPalindromeForAllDateFormats(date){
     else{
       var [ctr1,nextDate] = getNextPalindromeDate(date);
       var [ctr2,previousDate]=getPreviousPalindromeDate(date);
-      resultRef.innerText=`The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year},you missed it by ${ctr1} days! 😔`
+      resultRef.innerText='Sorry! Your birthday is not a palindrome!😔'
+      resultRef1.innerText=`The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year},you missed it by ${ctr1} days! 😔`
       resultRef2.innerText=`The previous palindrome date is ${previousDate.day}-${previousDate.month}-${previousDate.year},you missed it by ${ctr2} days! 😮`
     }
     }
